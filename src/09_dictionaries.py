@@ -51,7 +51,7 @@ print("Added New Dict:", waypoints)
 waypoints[0]["lat"] = -130
 waypoints[0]["name"] = "not a real place"
 
-print(waypoints)
+print("Modified:", waypoints)
 
 # Write a loop that prints out all the field values for all the waypoints
 # YOUR CODE HERE
