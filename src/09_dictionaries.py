@@ -39,7 +39,7 @@ waypoints = [
 newdic = dict(lat="344", lon=12, name="The House")
 
 waypoints.append(newdic)
-print(waypoints)
+print("Added New Dict:", waypoints)
 
 
 # Modify the dictionary with name "a place" such that its longitude
