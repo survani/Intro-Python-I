@@ -2,6 +2,7 @@
 
 # YOUR CODE HERE
 def is_even(x):
+    # when x / 2 has a remainder of 0 then x is even.
     if x % 2 == 0:
         return True
     else:
