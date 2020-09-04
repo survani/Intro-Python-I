@@ -25,3 +25,5 @@ def checking_number(x):
 
 
 checking_number(num)
+
+# done
