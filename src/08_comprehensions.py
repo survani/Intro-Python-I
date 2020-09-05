@@ -10,25 +10,30 @@ for more info regarding list comprehensions.
 
 # Write a list comprehension to produce the array [1, 2, 3, 4, 5]
 
-y = []
+y = [numbers for numbers in range(1, 6)]
 
-print (y)
+print("Produce Array 1-5:", y)
 
 # Write a list comprehension to produce the cubes of the numbers 0-9:
 # [0, 1, 8, 27, 64, 125, 216, 343, 512, 729]
 
-y = []
+# This works by doing the power of 3 to each value inside the array "object".
+"""
+This works like this: ( Everything inside the ( ) is the index. )
+array [ (0)**3 = 0 , (1)**3 = 1, (2)**3 = 8 ... ] 
+"""
+y = [numbers**3 for numbers in range(10)]
 
-print(y)
+print("Cubes of the Numbers:", y)
 
 # Write a list comprehension to produce the uppercase version of all the
 # elements in array a. Hint: "foo".upper() is "FOO".
 
 a = ["foo", "bar", "baz"]
 
-y = []
+y = [text.upper() for text in a]
 
-print(y)
+print("Uppercase Array:", y)
 
 # Use a list comprehension to create a list containing only the _even_ elements
 # the user entered into list x.
@@ -36,6 +41,6 @@ print(y)
 x = input("Enter comma-separated numbers: ").split(',')
 
 # What do you need between the square brackets to make it work?
-y = []
+y = [even for even in x if int(even) % 2 == 0]
 
 print(y)
