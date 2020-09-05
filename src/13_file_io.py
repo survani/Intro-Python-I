@@ -13,7 +13,7 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 
 with open('foo.txt') as x:
     print(x.read())
-print(x.closed)
+x.close()
 
 # Open up a file called "bar.txt" (which doesn't exist yet) for
 # writing. Write three lines of arbitrary content to that file,
@@ -29,11 +29,10 @@ with open('bar.txt', 'w') as x:
         "This file contains all the secrets of the world.\n",
         "The Earth is flat\n"
     ])
-
-    print(x.closed)
+x.close()
 
 # Now open file to see what the content is.
 
 with open('bar.txt') as x:
     print(x.read())
-print(x.closed)
+x.close()

@@ -36,13 +36,13 @@ class Geocache(Waypoint):
         self.size = size
 
     def __str__(self):
-        return f" Name: {self.name}, Difficult: {self.difficulty}, Size: {self.size}, Lat: {self.lat}, Lon: {self.lon}"
+        return f" Name: {self.name}, Difficulty: {self.difficulty}, Size: {self.size}, Lat: {self.lat}, Lon: {self.lon}"
 
 
 # Make a new waypoint and print it out: "Catacombs", 41.70505, -121.51521
 
 # YOUR CODE HERE
-waypoint = Waypoint("Catacombs", 41.70505, -121.51521)
+waypoint = Waypoint("Catacombs", 41.70505, -121.51521).__str__()
 
 # Without changing the following line, how can you make it print into something
 # more human-readable? Hint: Look up the `object.__str__` method
